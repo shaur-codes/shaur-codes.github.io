@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Integrity and Truth</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      background-color: #ffffff;
+      color: #333333;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .dark-mode {
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .highlight {
+      background-color: #fff3cd;
+      padding: 2px 5px;
+      border-radius: 3px;
+    }
+
+    .dark-mode .highlight {
+      background-color: #ffecb3;
+      color: #121212;
+    }
+
+    .quote {
+      font-style: italic;
+      border-left: 4px solid #ccc;
+      padding-left: 15px;
+      margin: 20px 0;
+      color: #555;
+    }
+
+    .dark-mode .quote {
+      color: #b0b0b0;
+      border-left-color: #666;
+    }
+
+    button {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 10px 15px;
+      font-size: 1rem;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .dark-mode button {
+      background-color: #e0e0e0;
+      color: #121212;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Integrity and Truth</h1>
+    <p>
+      You tell your child to always tell the truth. They ask, "But what if telling the truth gets me in trouble?" You pause for a moment and reply, "Well, if you're honest, people will trust you more." The child tilts their head. "But what if lying gets me out of trouble and no one finds out?"
+    </p>
+    <p>
+      You realize that your reasoning, though valid, doesn’t hold up to the immediate rewards dishonesty can offer. You could say lying is "wrong," but the child has already grasped something most adults have internalized: <span class="highlight">society rewards deception, and truth is often punished.</span>
+    </p>
+    <p>
+      A student who cheats may get better grades. A businessman who manipulates might make more profit. A politician who deceives might gain more power. Yet, deep down, we admire those who remain truthful despite the risks. Why?
+    </p>
+    <p class="quote">
+      "Because integrity is not about short-term gain. It is about long-term fulfillment."
+    </p>
+    <p>
+      The liar may win today, but trust is like glass—once shattered, it is never the same. A person who cheats their way up finds themselves trapped, building success on a foundation of deception that will inevitably crumble.
+    </p>
+    <p>
+      But this is not obvious. Society conditions people to prioritize immediate gains. From childhood, we are trained to chase approval, external validation, and quick rewards. People lie not because they are evil, but because they have learned that dishonesty can be useful. People are selfish not because they hate others, but because they have learned that generosity is often unreciprocated.
+    </p>
+    <p class="quote">
+      "Act virtuously, and soon you will find virtue natural. Think nobly, and soon you will find nobility effortless."
+    </p>
+    <p>
+      Beyond a point, morality is no longer a choice—it is simply who you are. The world may tempt you with shortcuts, but they will not interest you. You will not even have to resist, because you will know, beyond doubt, that you have outgrown them.
+    </p>
+  </div>
+
+  <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+  <script>
+    function toggleDarkMode() {
+      const body = document.body;
+      body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>

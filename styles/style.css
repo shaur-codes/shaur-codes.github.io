@@ -7,61 +7,70 @@ body {
     background-color: #ffffff;
     color: #333333;
     transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .dark-mode {
+}
+
+.dark-mode {
     background-color: #121212;
     color: #e0e0e0;
-  }
-  
-  .container {
+}
+
+.container {
     max-width: 800px;
     margin: 0 auto;
-  }
-  
-  h1 {
+}
+
+h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-  }
-  
-  h2 {
+}
+
+h2 {
     font-size: 2rem;
     margin-bottom: 15px;
-  }
-  
-  p {
+}
+
+p {
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
-  }
-  
-  .highlight {
+}
+
+.highlight {
     background-color: #fff3cd;
     padding: 2px 5px;
     border-radius: 3px;
-  }
-  
-  .dark-mode .highlight {
+}
+
+.dark-mode .highlight {
     background-color: #ffecb3;
     color: #121212;
-  }
-  
-  .quote {
+}
+
+.quote {
     font-style: italic;
     border-left: 4px solid #ccc;
     padding-left: 15px;
     margin: 20px 0;
     color: #555;
-  }
-  
-  .dark-mode .quote {
+}
+
+.dark-mode .quote {
     color: #b0b0b0;
     border-left-color: #666;
-  }
-  
-  button {
-    position: fixed;
-    top: 20px;
-    right: 20px;
+}
+
+/* Button Container for Search and Dark Mode */
+.button-container {
+    display: flex;
+    gap: 10px; /* Adjust spacing between buttons */
+    justify-content: flex-end; /* Align to the right */
+    margin-top: 10px; /* Add some space above the buttons */
+    position: fixed; /* Keep buttons in place on scroll */
+    top: 20px; /* Adjust vertical position */
+    right: 20px; /* Adjust horizontal position */
+    z-index: 10; /* Ensure buttons are above other content */
+}
+
+button {
     padding: 10px 15px;
     font-size: 1rem;
     background-color: #333;
@@ -70,35 +79,98 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-  }
-  
-  .dark-mode button {
+}
+
+.dark-mode button {
     background-color: #e0e0e0;
     color: #121212;
-  }
-  
-  a {
+}
+
+a {
     color: #1a73e8;
     text-decoration: none;
-  }
-  
-  .dark-mode a {
+}
+
+.dark-mode a {
     color: #8ab4f8;
-  }
-  
-  a:hover {
+}
+
+a:hover {
     text-decoration: underline;
-  }
-  
-  .blog-list {
+}
+
+.blog-list {
     list-style-type: none;
     padding: 0;
-  }
-  
-  .blog-list li {
+}
+
+.blog-list li {
     margin-bottom: 15px;
-  }
-  
-  .blog-list li a {
+}
+
+.blog-list li a {
     font-size: 1.2rem;
-  }
+}
+
+/* Search Bar Styling */
+#searchBar {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Add some space below */
+    width: 200px; /* Adjust width as needed */
+}
+
+footer {
+    background-color: #333; /* Darker footer background */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px; /* Space above the footer */
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.social-media {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0; /* Space around social media links */
+    display: flex;
+    justify-content: center; /* Center the links */
+    gap: 20px; /* Space between the links */
+}
+
+.social-media li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-media li a:hover {
+    text-decoration: underline;
+}
+
+.about-me {
+    margin-top: 20px;
+    text-align: center; /* Center the content */
+}
+
+.about-me img {
+    border-radius: 50%; /* Make the image circular */
+    margin-bottom: 10px;
+}
+
+.recent-posts {
+    margin-top: 20px;
+}
+
+.recent-posts ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recent-posts li {
+    margin-bottom: 10px;
+}

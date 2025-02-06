@@ -1,29 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Blog</title>
-  <link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaurya Mishra</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Welcome to My Blog</h1>
-    <p>Here are some of the blogs I've written:</p>
-    <ul class="blog-list">
-      <li><a href="blogs/blog1.html">Integrity and Truth</a></li>
-      <li><a href="blogs/blog2.html">The Power of Habits</a></li>
-      <!-- Add more blogs here -->
-    </ul>
-  </div>
+    <div class="container">
+        <h1>Shaurya Mishra - blog</h2>
+        <ul class="blog-list">
+            <li><a href="blogs/blog1.html">morality and conditioning</a></li>
+        </ul>
 
-  <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        <input type="text" id="searchBar" placeholder="Search blogs...">
+        
 
-  <script>
-    function toggleDarkMode() {
-      const body = document.body;
-      body.classList.toggle('dark-mode');
-    }
-  </script>
+        <div class="recent-posts">
+            <h2>Recent Posts</h2>
+            <ul>
+                <li><a href="blogs/blog1.html">morality and conditioning</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="button-container">  <button onclick="searchBlogs()">Search</button>
+        <button onclick="toggleDarkMode()">🌓</button>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 My Blog. All rights reserved.</p>
+            <ul class="social-media">
+                <li><a href="https://www.instagram.com/for.shaur/" target="_blank">Instagram</a></li>
+                <li><a href="https://github.com/shaur-codes/" target="_blank">Github</a></li>
+        </div>
+    </footer>
+
+
+    <script>
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+        }
+
+        function searchBlogs() {
+            const searchTerm = document.getElementById('searchBar').value.toLowerCase();
+            const blogListItems = document.querySelectorAll('.blog-list li');
+
+            blogListItems.forEach(item => {
+                const blogTitle = item.textContent.toLowerCase();
+                if (blogTitle.includes(searchTerm)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+    </script>
 </body>
 </html>
