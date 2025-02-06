@@ -8,54 +8,28 @@
 </head>
 <body>
     <div class="container">
-        <h1>Shaurya Mishra - blog</h2>
+        <h1>Shaurya Mishra - Blog</h1>
         <ul class="blog-list">
-            <li><a href="blogs/blog1.html">morality and conditioning</a></li>
+            <li><a href="blogs/blog1.html">Morality and Conditioning</a></li>
         </ul>
 
-        <input type="text" id="searchBar" placeholder="Search blogs...">
-        
-
-        <div class="recent-posts">
-            <h2>Recent Posts</h2>
-            <ul>
-                <li><a href="blogs/blog1.html">morality and conditioning</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="button-container">  <button onclick="searchBlogs()">Search</button>
+    <div class="button-container">
         <button onclick="toggleDarkMode()">🌓</button>
     </div>
 
     <footer>
         <div class="footer-content">
-            <p>&copy; 2023 My Blog. All rights reserved.</p>
             <ul class="social-media">
                 <li><a href="https://www.instagram.com/for.shaur/" target="_blank">Instagram</a></li>
                 <li><a href="https://github.com/shaur-codes/" target="_blank">Github</a></li>
+            </ul>
         </div>
     </footer>
-
 
     <script>
         function toggleDarkMode() {
             const body = document.body;
             body.classList.toggle('dark-mode');
-        }
-
-        function searchBlogs() {
-            const searchTerm = document.getElementById('searchBar').value.toLowerCase();
-            const blogListItems = document.querySelectorAll('.blog-list li');
-
-            blogListItems.forEach(item => {
-                const blogTitle = item.textContent.toLowerCase();
-                if (blogTitle.includes(searchTerm)) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
         }
 
     </script>
